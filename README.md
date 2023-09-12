@@ -31,5 +31,7 @@ Para construir el proyecto `ng build` to build the project. Se almacenarán en l
 ### Diseño:  [Bootstrap](https://getbootstrap.com/) 
 ### PrimeNG: [Pipe](https://primeng.org/) 
 ### API List: [Pipe](https://angular.io/api?query=pipe) 
+### PDF atajos: [FernendoH][angular-cheat-sheet.pdf](https://github.com/CinTutuDev/pipesApp/files/12585594/angular-cheat-sheet.pdf)
+
 
 
