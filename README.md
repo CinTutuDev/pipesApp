@@ -33,5 +33,28 @@ Para construir el proyecto `ng build` to build the project. Se almacenarán en l
 ### API List: [Pipe](https://angular.io/api?query=pipe) 
 ### PDF atajos: [FernendoH][angular-cheat-sheet.pdf](https://github.com/CinTutuDev/pipesApp/files/12585594/angular-cheat-sheet.pdf)
 
+## 🕹 Intalación de PrimeNG
 
+* Ir a
+ ```
+https://primeng.org/installation
+```
 
+* Intalamos en terminal:
+  ```
+  npm install primeng
+  npm install primeicons
+  ```
+* Ir a angular.json:
+```
+ "styles": [
+              "src/styles.scss",
+              "node_modules/primeicons/primeicons.css",
+              "node_modules/primeng/resources/themes/lara-light-purple/theme.css",
+              "node_modules/primeng/resources/primeng.min.css"
+            ],
+```
+* Importamos en app.component.ts
+ ```
+import { PrimeNGConfig } from 'primeng/api';
+```
