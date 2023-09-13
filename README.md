@@ -44,6 +44,7 @@ https://primeng.org/installation
   ```
   npm install primeng
   npm install primeicons
+  npm install @angular/animations --save
   ```
 * Ir a angular.json:
 ```
