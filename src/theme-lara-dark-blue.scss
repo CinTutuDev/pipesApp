@@ -1,0 +1,17 @@
+@use "/src/styles.scss";
+@import "primeng/resources/themes/lara-dark-blue/theme.css";
+
+
+/* .p-megamenu {
+  background-color: styles.$primaryLightColor;
+} */
+
+.p-megamenu.p-megamenu-horizontal
+  .p-megamenu-root-list
+  > .p-menuitem
+  > .p-menuitem-content
+  .p-menuitem-link
+  .p-menuitem-text {
+  color: styles.$primaryTextColor;
+  font-size: large;
+}
