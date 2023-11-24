@@ -1,11 +1,9 @@
-
 <p-menubar [model]="manuItems" styleClass="flex">
-  <ng-template pTemplate="start" class="template">
-    <img src="assets/favicon.png" height="40" class="mr-2" />
+  <ng-template pTemplate="start">
+    <img src="assets/favicon.png" height="30" class="mr-2" alt="icono" />
   </ng-template>
-
   <ng-template pTemplate="end">
-    <button
+    <!--    <button
       pButton
       pRipple
       label="Login"
@@ -16,10 +14,7 @@
       pRipple
       label="Register"
       class="p-button-rounded border-none ml-5 font-light line-height-2 bg-blue-500 text-white"
-    ></button>
+    ></button> -->
     <app-change-aparence></app-change-aparence>
   </ng-template>
-
 </p-menubar>
-
-

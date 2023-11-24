@@ -50,10 +50,10 @@ export class MenuComponent implements OnInit {
         icon: 'pi pi-spin pi-cog',
         items: [
           {
-            label: 'Left',
-            icon: 'pi pi-fw pi-align-left',
+            label: 'Otro elemento',
+            icon: 'pi pi-spin pi-cog',
           },
-          {
+         /*  {
             label: 'Right',
             icon: 'pi pi-fw pi-align-right',
           },
@@ -64,7 +64,7 @@ export class MenuComponent implements OnInit {
           {
             label: 'Justify',
             icon: 'pi pi-fw pi-align-justify',
-          },
+          }, */
         ],
       },
   /*     {
