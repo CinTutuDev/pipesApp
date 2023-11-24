@@ -1,101 +1,143 @@
 import { Component, OnInit } from '@angular/core';
-import { MegaMenuItem, MenuItem } from 'primeng/api';
+
+import { MenuItem } from 'primeng/api';
 
 @Component({
   selector: 'shared-menu',
   templateUrl: './menu.component.html',
 })
 export class MenuComponent implements OnInit {
+  /* public manuItems: MegaMenuItem[] | undefined; */
+  public manuItems: MenuItem[] | undefined;
+
   constructor() {}
 
-  public items: MegaMenuItem[] | undefined;
-
   ngOnInit() {
-    this.items = [
+    this.manuItems = [
       {
-        label: 'Videos',
-        icon: 'pi pi-fw pi-video',
+        label: 'Pipes de Angular',
+        icon: 'pi pi-desktop',
         items: [
-          [
-            {
-              label: 'Video 1',
-              items: [{ label: 'Video 1.1' }, { label: 'Video 1.2' }],
-            },
-            {
-              label: 'Video 2',
-              items: [{ label: 'Video 2.1' }, { label: 'Video 2.2' }],
-            },
-          ],
+          {
+            label: 'Textos y Fechas',
+            icon: 'pi pi-fw pi-align-left',
+           /*  items: [
+              {
+                label: 'Números',
+                icon: 'pi pi-dollar',
+              },
+              {
+                label: 'Video',
+                icon: 'pi pi-fw pi-video',
+              },
+            ], */
+          },
+          {
+            label: 'Números',
+            icon: 'pi pi-fw pi-dollar',
+          },
+        /*   {
+            separator: true,
+          }, */
+          {
+            label: 'No comunes',
+            icon: 'pi pi-fw pi-eye',
+          },
         ],
       },
       {
-        label: 'Users',
-        icon: 'pi pi-fw pi-users',
+        label: 'Pipes presonalizados',
+        icon: 'pi pi-spin pi-cog',
         items: [
-          [
-            {
-              label: 'User 1',
-              items: [{ label: 'User 1.1' }, { label: 'User 1.2' }],
-            },
-            {
-              label: 'User 2',
-              items: [{ label: 'User 2.1' }, { label: 'User 2.2' }],
-            },
-          ],
+          {
+            label: 'Left',
+            icon: 'pi pi-fw pi-align-left',
+          },
+          {
+            label: 'Right',
+            icon: 'pi pi-fw pi-align-right',
+          },
+          {
+            label: 'Center',
+            icon: 'pi pi-fw pi-align-center',
+          },
+          {
+            label: 'Justify',
+            icon: 'pi pi-fw pi-align-justify',
+          },
+        ],
+      },
+  /*     {
+        label: 'Users',
+        icon: 'pi pi-fw pi-user',
+        items: [
+          {
+            label: 'New',
+            icon: 'pi pi-fw pi-user-plus',
+          },
+          {
+            label: 'Delete',
+            icon: 'pi pi-fw pi-user-minus',
+          },
+          {
+            label: 'Search',
+            icon: 'pi pi-fw pi-users',
+            items: [
+              {
+                label: 'Filter',
+                icon: 'pi pi-fw pi-filter',
+                items: [
+                  {
+                    label: 'Print',
+                    icon: 'pi pi-fw pi-print',
+                  },
+                ],
+              },
+              {
+                icon: 'pi pi-fw pi-bars',
+                label: 'List',
+              },
+            ],
+          },
         ],
       },
       {
         label: 'Events',
         icon: 'pi pi-fw pi-calendar',
         items: [
-          [
-            {
-              label: 'Event 1',
-              items: [{ label: 'Event 1.1' }, { label: 'Event 1.2' }],
-            },
-            {
-              label: 'Event 2',
-              items: [{ label: 'Event 2.1' }, { label: 'Event 2.2' }],
-            },
-          ],
-          [
-            {
-              label: 'Event 3',
-              items: [{ label: 'Event 3.1' }, { label: 'Event 3.2' }],
-            },
-            {
-              label: 'Event 4',
-              items: [{ label: 'Event 4.1' }, { label: 'Event 4.2' }],
-            },
-          ],
+          {
+            label: 'Edit',
+            icon: 'pi pi-fw pi-pencil',
+            items: [
+              {
+                label: 'Save',
+                icon: 'pi pi-fw pi-calendar-plus',
+              },
+              {
+                label: 'Delete',
+                icon: 'pi pi-fw pi-calendar-minus',
+              },
+            ],
+          },
+          {
+            label: 'Archieve',
+            icon: 'pi pi-fw pi-calendar-times',
+            items: [
+              {
+                label: 'Remove',
+                icon: 'pi pi-fw pi-calendar-minus',
+              },
+            ],
+          },
         ],
       },
       {
-        label: 'Settings',
-        icon: 'pi pi-fw pi-cog',
-        items: [
-          [
-            {
-              label: 'Setting 1',
-              items: [{ label: 'Setting 1.1' }, { label: 'Setting 1.2' }],
-            },
-            {
-              label: 'Setting 2',
-              items: [{ label: 'Setting 2.1' }, { label: 'Setting 2.2' }],
-            },
-            {
-              label: 'Setting 3',
-              items: [{ label: 'Setting 3.1' }, { label: 'Setting 3.2' }],
-            },
-          ],
-          [
-            {
-              label: 'Technology 4',
-              items: [{ label: 'Setting 4.1' }, { label: 'Setting 4.2' }],
-            },
-          ],
-        ],
-      },
+        label: 'Quit',
+        icon: 'pi pi-fw pi-power-off',
+      }, */
     ];
+
+
+
   }
 }

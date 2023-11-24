@@ -9,7 +9,7 @@ import { SharedModule } from './shared/shared.module';
 import { ButtonModule } from 'primeng/button';
 import { InputSwitchModule } from 'primeng/inputswitch';
 import { FormsModule } from '@angular/forms';
-import { MegaMenuModule } from 'primeng/megamenu';
+
 @NgModule({
   declarations: [AppComponent],
   imports: [
@@ -20,10 +20,10 @@ import { MegaMenuModule } from 'primeng/megamenu';
     ButtonModule,
     InputSwitchModule,
     FormsModule,
-    MegaMenuModule,
+
   ],
   providers: [],
   bootstrap: [AppComponent],
-  exports: [MegaMenuModule],
+  exports: [],
 })
 export class AppModule {}

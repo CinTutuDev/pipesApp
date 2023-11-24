@@ -7,10 +7,21 @@ import { ChangeAparenceComponent } from './components/change-aparence/change-apa
 import { ButtonModule } from 'primeng/button';
 import { InputSwitchModule } from 'primeng/inputswitch';
 import { FormsModule } from '@angular/forms';
-import { MegaMenuModule } from 'primeng/megamenu';
+
 @NgModule({
-  declarations: [MenuComponent, ChangeAparenceComponent, ChangeAparenceComponent],
-  imports: [CommonModule, PrimeNgModule,  ButtonModule, InputSwitchModule, FormsModule, MegaMenuModule],
+  declarations: [
+    MenuComponent,
+    ChangeAparenceComponent,
+    ChangeAparenceComponent,
+  ],
+  imports: [
+    CommonModule,
+    PrimeNgModule,
+    ButtonModule,
+    InputSwitchModule,
+    FormsModule,
+
+  ],
   exports: [MenuComponent, ChangeAparenceComponent],
 })
 export class SharedModule {}
