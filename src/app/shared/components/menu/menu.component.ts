@@ -7,6 +7,7 @@ import { MenuItem } from 'primeng/api';
   templateUrl: './menu.component.html',
 })
 export class MenuComponent implements OnInit {
+  public customDate: Date = new Date();
   /* public manuItems: MegaMenuItem[] | undefined; */
   public manuItems: MenuItem[] | undefined;
 

@@ -11,9 +11,12 @@
     color: styles.$highlightTextColor;
     font-size: large;
   }
-  .p-menuitem-icon{
+  .date {
+    color: styles.$highlightTextColor;
+    font-size: large;
+  }
+  .p-menuitem-icon {
     color: styles.$highlightTextColor !important;
     font-size: 1.5rem;
   }
 }
-

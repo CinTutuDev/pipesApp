@@ -15,6 +15,10 @@
       label="Register"
       class="p-button-rounded border-none ml-5 font-light line-height-2 bg-blue-500 text-white"
     ></button> -->
+
     <app-change-aparence></app-change-aparence>
+    <ul class="date">
+      <li>{{ customDate | date : "medium" : "" : "es-ES" }}</li>
+    </ul>
   </ng-template>
 </p-menubar>
