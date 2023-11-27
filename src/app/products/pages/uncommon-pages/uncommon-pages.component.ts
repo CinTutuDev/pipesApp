@@ -41,4 +41,11 @@ export class UncommonPagesComponent {
   deletClient(): void {
     this.clients.shift();
   }
+
+  //KeyValuePipe
+  public person = {
+    name: ' CinTutuDev',
+    age:' 42',
+    address: ' Vigo, España',
+  };
 }
