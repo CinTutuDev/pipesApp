@@ -22,18 +22,18 @@ export class MenuComponent implements OnInit {
           {
             label: 'Textos y Fechas',
             icon: 'pi pi-fw pi-align-left',
-            routerLink: '/'
+            routerLink: '/',
           },
           {
             label: 'Números',
             icon: 'pi pi-fw pi-dollar',
-            routerLink: 'numbers'
+            routerLink: 'numbers',
           },
 
           {
             label: 'No comunes',
             icon: 'pi pi-fw pi-eye',
-            routerLink: 'uncommon'
+            routerLink: 'uncommon',
           },
         ],
       },
@@ -42,10 +42,11 @@ export class MenuComponent implements OnInit {
         icon: 'pi pi-spin pi-cog',
         items: [
           {
-            label: 'Otro elemento',
-            icon: 'pi pi-spin pi-cog',
+            label: 'Custom Pipe',
+            icon: 'pi pi-cog',
+            routerLink: 'custom',
           },
-         /*  {
+          /*  {
             label: 'Right',
             icon: 'pi pi-fw pi-align-right',
           },
@@ -59,7 +60,7 @@ export class MenuComponent implements OnInit {
           }, */
         ],
       },
-  /*     {
+      /*     {
         label: 'Users',
         icon: 'pi pi-fw pi-user',
         items: [
@@ -128,8 +129,5 @@ export class MenuComponent implements OnInit {
         icon: 'pi pi-fw pi-power-off',
       }, */
     ];
-
-
-
   }
 }

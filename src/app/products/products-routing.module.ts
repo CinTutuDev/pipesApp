@@ -4,24 +4,29 @@ import { RouterModule, Routes } from '@angular/router';
 import { BasicsPagesComponent } from './pages/basics-pages/basics-pages.component';
 import { UncommonPagesComponent } from './pages/uncommon-pages/uncommon-pages.component';
 import { NumbersPagesComponent } from './pages/numbers-pages/numbers-pages.component';
+import { OrderComponent } from './pages/order/order.component';
 
 const routes: Routes = [
   {
     path: '',
-    component: BasicsPagesComponent
+    component: BasicsPagesComponent,
   },
   {
     path: 'numbers',
-    component: NumbersPagesComponent
+    component: NumbersPagesComponent,
   },
   {
     path: 'uncommon',
-    component: UncommonPagesComponent
+    component: UncommonPagesComponent,
+  },
+  {
+    path: 'custom',
+    component: OrderComponent,
   },
   {
     path: '**',
-    redirectTo: ''
-  }
+    redirectTo: '',
+  },
 ];
 
 @NgModule({
