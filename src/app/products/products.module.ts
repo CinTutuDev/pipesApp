@@ -10,6 +10,7 @@ import { PrimeNgModule } from '../prime-ng/prime-ng.module';
 import { OrderComponent } from './pages/order/order.component';
 import { ToggleCasePipe } from './pipes/toggle-case.pipe';
 
+
 @NgModule({
   declarations: [
     BasicsPagesComponent,
@@ -22,7 +23,8 @@ import { ToggleCasePipe } from './pipes/toggle-case.pipe';
   imports: [
     CommonModule,
     ProductsRoutingModule,
-    PrimeNgModule
+    PrimeNgModule,
+
   ]
 })
 export class ProductsModule { }
