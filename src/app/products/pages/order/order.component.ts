@@ -8,8 +8,9 @@ import { Color, Hero } from '../../interfaces/hero.interfaces';
   styleUrls: ['./order.component.scss'],
 })
 export class OrderComponent implements OnInit {
-  items: MenuItem[] | undefined;
+  /* items: MenuItem[] | undefined; */
   public isUpperCase: boolean = false;
+  public orderBy?: keyof Hero;
 
   public heroes: Hero[] = [
     {
@@ -42,6 +43,10 @@ export class OrderComponent implements OnInit {
 
   toggleUpperCase(): void {
     this.isUpperCase = !this.isUpperCase;
+  }
+
+  changeOrder(value: keyof Hero) {
+    this.orderBy = value;
   }
 
   ngOnInit() {
