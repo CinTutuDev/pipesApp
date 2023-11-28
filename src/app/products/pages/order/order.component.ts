@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { MenuItem } from 'primeng/api';
 
+import { Color, Hero } from '../../interfaces/hero.interfaces';
 @Component({
   selector: 'products-order',
   templateUrl: './order.component.html',
@@ -10,12 +11,41 @@ export class OrderComponent implements OnInit {
   items: MenuItem[] | undefined;
   public isUpperCase: boolean = false;
 
+  public heroes: Hero[] = [
+    {
+      name: 'Superman',
+      canFly: true,
+      color: Color.blue,
+    },
+    {
+      name: 'Batman',
+      canFly: false,
+      color: Color.black,
+    },
+    {
+      name: 'CinTutuDev',
+      canFly: true,
+      color: Color.red,
+    },
+    {
+      name: 'SúperLolita',
+      canFly: true,
+      color: Color.blue,
+    },
+    {
+      name: 'SúperChylu',
+      canFly: true,
+      color: Color.green,
+    },
+  ];
+  constructor() {}
+
   toggleUpperCase(): void {
     this.isUpperCase = !this.isUpperCase;
   }
 
   ngOnInit() {
-    this.items = [
+    /* this.items = [
       {
         label: 'Update',
         icon: 'pi pi-refresh',
@@ -34,6 +64,6 @@ export class OrderComponent implements OnInit {
         icon: 'pi pi-upload',
         routerLink: '/fileupload',
       },
-    ];
+    ]; */
   }
 }
