@@ -34,7 +34,7 @@ export class OrderComponent implements OnInit {
     },
     {
       name: 'SúperChylu',
-      canFly: true,
+      canFly: false,
       color: Color.green,
     },
   ];
